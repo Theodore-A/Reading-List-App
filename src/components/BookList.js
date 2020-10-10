@@ -8,7 +8,7 @@ function BookList() {
   return (
     <div>
       {books.map((book) => (
-        <Book name={book.name} author={book.author} key={book.id} />
+        <Book name={book.name} author={book.author} key={book.id} book={book} />
       ))}
     </div>
   );

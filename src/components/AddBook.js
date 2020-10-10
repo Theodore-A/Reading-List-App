@@ -18,7 +18,12 @@ function AddBook() {
     e.preventDefault();
     setBooks((preBooks) => [
       ...preBooks,
-      { name: name, author: author, id: Math.random() * 1000 },
+      {
+        name: name,
+        author: author,
+        completed: false,
+        id: Math.random() * 1000,
+      },
     ]);
     setName("");
     setAuthor("");
